@@ -7,4 +7,8 @@ It will hopefully have more in-depth comments than the ones present in the origi
 ## Tips
 
 While following the book, make sure you have the Python Virtual Environment activated (see [prerequisites](https://www.obeythetestinggoat.com/book/pre-requisite-installations.html) for instructions).
-The activation command is (for Mac/Linux): `python3.6 -m venv virtualenv`
+The activation command is (for Mac/Linux):
+```bash
+python3.6 -m venv virtualenv
+source virtualenv/bin/activate
+```
