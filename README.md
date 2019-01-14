@@ -12,3 +12,8 @@ The activation command is (for Mac/Linux):
 python3.6 -m venv virtualenv
 source virtualenv/bin/activate
 ```
+
+Use this command to get the server up and running:
+```bash
+python manage.py runserver
+```
