@@ -13,7 +13,17 @@ python3.6 -m venv virtualenv
 source virtualenv/bin/activate
 ```
 
-Use this command to get the server up and running:
+To get the server up and running:
 ```bash
 python manage.py runserver
+```
+
+To run the functional tests
+```bash
+python manage.py test functional_tests
+```
+
+To run the unit tests
+```bash
+python manage.py test lists
 ```
