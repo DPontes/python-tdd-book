@@ -8,3 +8,4 @@ __pycache__
 *.swn
 /lists/migrations
 /static
+.env
