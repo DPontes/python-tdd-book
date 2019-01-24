@@ -8,7 +8,7 @@ WorkingDirectory=/home/diopon/sites/DOMAIN
 EnvironmentFile=/home/diopon/sites/DOMAIN/.env
 
 ExecStart=/home/diopon/sites/DOMAIN/virtualenv/bin/gunicorn \
-    --bind unix:/tmp/shenannigans-staging.tk.socket \
+    --bind unix:/tmp/DOMAIN.socket \
     superlists.wsgi:application
 
 [Install]
