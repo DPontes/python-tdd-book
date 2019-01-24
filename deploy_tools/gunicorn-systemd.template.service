@@ -1,0 +1,15 @@
+[Unit]
+Description=Gunicorn server for DOMAIN
+
+[Service]
+Restart=on-failure
+User=diopon
+WorkingDirectory=/home/diopon/sites/DOMAIN
+EnvironmentFile=/home/diopon/sites/DOMAIN/.env
+
+ExecStart=/home/diopon/sites/DOMAIN/virtualenv/bin/gunicorn \
+    --bind unix:/tmp/shenannigans-staging.tk.socket \
+    superlists.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
